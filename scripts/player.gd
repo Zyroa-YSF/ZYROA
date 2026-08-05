@@ -2,13 +2,24 @@ extends CharacterBody2D
 
 @export var speed := 220
 @export var jump_velocity := -400
+@export var touch_move_speed := 180
+
+signal interacted
+signal attacked
+
+@onready var ui := null
 
 func _ready():
     Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+    if has_node("/root/HUD"):
+        ui = get_node("/root/HUD")
 
 func _physics_process(delta):
     var dir := Vector2.ZERO
+    # Keyboard
     dir.x = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
+
+    # Touch / virtual joystick placeholder: if touch input, use ui input actions (to be implemented in mobile controls)
     if dir.length() > 0:
         dir = dir.normalized()
         velocity.x = dir.x * speed
@@ -23,6 +34,14 @@ func _physics_process(delta):
 
     move_and_slide()
 
-func interact():
-    # placeholder: interaction handler
-    pass
+    # Interaction
+    if Input.is_action_just_pressed("interact"):
+        emit_signal("interacted")
+
+    # Attack
+    if Input.is_action_just_pressed("attack"):
+        emit_signal("attacked")
+
+func _on_flashlight_battery_changed(value):
+    if ui:
+        ui.update_battery(value)

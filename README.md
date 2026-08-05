@@ -1,22 +1,15 @@
-# ZYROA — BAD DAY INSOMNIA (Prototype)
+# README progress update
 
-Kısa: Godot (GDScript) ile yapılacak gerçekçi indie-korku prototipi.
+Progress update: started gameplay implementation and HUD.
 
-Özellikler:
-- Motor: Godot 4 (GDScript)
-- Platformlar: PC (Windows/macOS/Linux), Android, iOS
-- Çok dilli altyazı/çeviri: otomatik çeviri taslakları eklendi; daha sonra insan çevirileriyle değiştirilecek.
-- Varlıklar: Sketchfab ve Poly Pizza öncelikli; Freesound vb. ücretsiz ses kaynakları.
+Files added in this commit:
+- scenes/player.tscn
+- scenes/npc.tscn
+- scenes/hud.tscn
+- scripts/ui.gd
+- updated scripts/player.gd (interaction and attack signals, HUD integration)
 
-Notlar:
-- Proje sahibi isteğiyle bu prototipte crash reporting / hata gönderimi bulunmayacak. scripts/crash_reporter.gd dosyası devre dışı bırakıldı.
-- Proje ücretsiz olarak dağıtılacak ve ticari amaç gütmeyecek; varlık seçimi buna göre (ücretsiz/royalty-free/CC-BY/CC0/CC-BY-NC gibi lisanslar) yapılacaktır.
-
-Proje yapısı (kısaca):
-- scenes/ — .tscn sahne dosyaları
-- scripts/ — GDScript dosyaları
-- assets/ — modeller, ses, müzik, atıf dosyası
-- i18n/ — .po çeviri dosyaları
-- GUIDELINES.md — proje yönergesi ve varlık lisans kuralları
-
-Bir sonraki adım olarak varlık toplama (Sketchfab/PolyPizza/Freesound) ve sahne implementasyonuna başlayacağım; varlıklar assets/ altında toplanacak ve assets/ATTRIBUTIONS.md dosyası güncellenecektir.
+Next steps (immediate):
+- Wire HUD as an Autoload or add to main.tscn so it is accessible via /root/HUD.
+- Create a simple main.tscn that instances Player and HUD to test movement and interactions locally.
+- Start downloading models/sounds and add them to assets/ with correct attributions.
