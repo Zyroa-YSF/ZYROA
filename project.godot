@@ -4,4 +4,3 @@ run/main_scene="res://scenes/main.tscn"
 
 [rendering]
 quality/driver/driver_name="GLES3"
-

@@ -2,18 +2,21 @@
 
 Kısa: Godot (GDScript) ile yapılacak gerçekçi indie-korku prototipi.
 
-Varlık kaynakları tercihi:
-- 3D modeller: Sketchfab öncelikli, ikinci kaynak olarak Poly Pizza kullanılacak.
-- Sesler: Freesound ve diğer ücretsiz ambiyans kaynakları.
+Özellikler:
+- Motor: Godot 4 (GDScript)
+- Platformlar: PC (Windows/macOS/Linux), Android, iOS
+- Çok dilli altyazı/çeviri: otomatik çeviri taslakları eklendi; daha sonra insan çevirileriyle değiştirilecek.
+- Varlıklar: Sketchfab ve Poly Pizza öncelikli; Freesound vb. ücretsiz ses kaynakları.
 
-Lisans: Proje sahibi isteğiyle kök dizinde açık lisans dosyası bırakılmadı; varlık lisansları her asset için ayrı takip edilecek ve atıf gerektirenler assets/ATTRIBUTIONS.md dosyasında listelenecek.
-
-Crash reporting: scripts/crash_reporter.gd eklendi ve Autoload yapıldı. REPORT_URL ve AUTH_TOKEN ayarları README ve proje ayarlarında belirtilecek.
+Notlar:
+- Proje sahibi isteğiyle bu prototipte crash reporting / hata gönderimi bulunmayacak. scripts/crash_reporter.gd dosyası devre dışı bırakıldı.
+- Proje ücretsiz olarak dağıtılacak ve ticari amaç gütmeyecek; varlık seçimi buna göre (ücretsiz/royalty-free/CC-BY/CC0/CC-BY-NC gibi lisanslar) yapılacaktır.
 
 Proje yapısı (kısaca):
 - scenes/ — .tscn sahne dosyaları
 - scripts/ — GDScript dosyaları
 - assets/ — modeller, ses, müzik, atıf dosyası
 - i18n/ — .po çeviri dosyaları
+- GUIDELINES.md — proje yönergesi ve varlık lisans kuralları
 
-Not: Sketchfab ve Poly Pizza'dan varlık toplama işlemine başlıyorum; uygun bulduğum modelleri assets/ altında toplayıp burada atıf satırlarını ekleyeceğim.
+Bir sonraki adım olarak varlık toplama (Sketchfab/PolyPizza/Freesound) ve sahne implementasyonuna başlayacağım; varlıklar assets/ altında toplanacak ve assets/ATTRIBUTIONS.md dosyası güncellenecektir.
