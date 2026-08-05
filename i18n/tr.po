@@ -1,0 +1,8 @@
+msgid "BAD DAY INSOMNIA"
+msgstr "BAD DAY INSOMNIA"
+
+msgid "Press [E] to interact"
+msgstr "E tuşuna basarak etkileşime geç"
+
+msgid "You were caught and sent to prison"
+msgstr "Yakalandın ve hapse gönderildin"

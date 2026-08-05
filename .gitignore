@@ -1,0 +1,25 @@
+# Godot
+
+.import/
+.export/
+.export/**
+*.import
+*.cfg
+*.yml
+*.db
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build folders
+.build/*
+
+# Exports
+*.apk
+*.aab
+*.ipa
+
+# Visual Studio Code
+.vscode/

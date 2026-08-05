@@ -1,0 +1,8 @@
+msgid "BAD DAY INSOMNIA"
+msgstr "ПЛОХОЙ ДЕНЬ БЕССОННИЦА"
+
+msgid "Press [E] to interact"
+msgstr "Нажмите [E], чтобы взаимодействовать"
+
+msgid "You were caught and sent to prison"
+msgstr "Вас поймали и отправили в тюрьму"
