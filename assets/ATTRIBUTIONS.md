@@ -1,17 +1,10 @@
-# Assets Attribution and Sources
+# Assets Attribution and Sources (placeholder entries)
 
-Güncelleme: Crash reporter kaldırıldı; bu projede otomatik hata/çarpma raporlama bulunmayacak.
+As I collect assets from Sketchfab / Poly Pizza / Freesound, I'll add concrete entries below with exact filenames and licenses.
 
-Lisans tercihleri ve notlar:
-- Proje ücretsiz ve ticari amaç gütmediğinden CC-BY-NC türü lisanslar da kullanılabilir; yine de mümkünse CC0/CC-BY tercih edilir.
-- Satın alınması gereken veya "no-redistribution" gibi kısıtlı modeller kullanılmayacak.
+Example placeholder entries (to be replaced with real attributions when downloaded):
+- assets/models/elevator_door.glb — "Elevator Door" by ExampleAuthor — https://sketchfab.com/models/EXAMPLE — License: CC0
+- assets/models/bench_street.glb — "City Bench" by ExampleAuthor — https://poly.pizza/item/EXAMPLE — License: CC-BY-NC 4.0
+- assets/sounds/tunnel_ambience.wav — "Tunnel Ambience" by SoundAuthor — https://freesound.org/people/Example/sounds/EXAMPLE — License: CC0
 
-Atıf şablonu (her varlık için):
-- assets/<relative-path> — "Title" by Author — Source URL — License (e.g., CC0 / CC-BY 4.0 / CC-BY-NC 4.0)
-
-Kaynaklar ve arama taktikleri:
-- Sketchfab: lisans filtresi kullanarak "Downloadable" ve uygun lisansı seç.
-- Poly Pizza: arşivlenmiş modelleri bulmak için hızlı bir kaynak; orijinal lisansı kontrol et.
-- Freesound: adım sesleri, ambiyans, metalik uğultu, damla sesleri.
-
-(Bu dosya, topladığım varlıklarla birlikte güncellenecektir.)
+(These are placeholders. Real attributions will be accurate URLs and license names once assets are downloaded.)
