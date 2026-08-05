@@ -1,15 +1,10 @@
-# README progress update
+# Progress update
 
-Progress update: started gameplay implementation and HUD.
+I've started implementing the playable entry point (main.tscn) that instances the level (apartment), player, and HUD. This lets you run the project and immediately test player movement and HUD updates.
 
-Files added in this commit:
-- scenes/player.tscn
-- scenes/npc.tscn
-- scenes/hud.tscn
-- scripts/ui.gd
-- updated scripts/player.gd (interaction and attack signals, HUD integration)
+Next actions (I'll continue):
+- Implement asansör (elevator) interaction wiring to allow entering elevator and transitioning to tunnel scene.
+- Flesh out tunnel scene with flashlight toggle (F key), battery drain showing on HUD.
+- Collect free assets from Sketchfab/PolyPizza and Freesound and add them to assets/ with attributions.
 
-Next steps (immediate):
-- Wire HUD as an Autoload or add to main.tscn so it is accessible via /root/HUD.
-- Create a simple main.tscn that instances Player and HUD to test movement and interactions locally.
-- Start downloading models/sounds and add them to assets/ with correct attributions.
+I'll implement the first half of the game's flow (apartment -> elevator -> tunnel -> corridor with the initial chase) and stop there, per your instruction, then wait for your approval to continue with the rest.
