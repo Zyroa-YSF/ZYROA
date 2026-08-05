@@ -1,26 +1,19 @@
 # ZYROA — BAD DAY INSOMNIA (Prototype)
 
-Kısa: Godot (GDScript) ile yapılacak çokdilli (EN/TR/RU/ZH/PT/ES) hayatta kalma/korku prototipi.
+Kısa: Godot (GDScript) ile yapılacak gerçekçi indie-korku prototipi.
 
-Özellikler:
-- Motor: Godot 4 (GDScript)
-- Platformlar: PC (Windows/macOS/Linux), Android, iOS
-- Çok dilli altyazı/çeviri: otomatik çeviri taslakları eklendi; daha sonra insan çevirileriyle değiştirilecek.
-- Varlıklar: İlk aşamada placeholder ve ücretsiz/royalty-free varlıklar kullanılacak. Atıf/izin dosyaları assets/ATTRIBUTIONS.md içinde tutulacak.
+Varlık kaynakları tercihi:
+- 3D modeller: Sketchfab öncelikli, ikinci kaynak olarak Poly Pizza kullanılacak.
+- Sesler: Freesound ve diğer ücretsiz ambiyans kaynakları.
 
-Bu dal: feature/proto-bad-day-insomnia
+Lisans: Proje sahibi isteğiyle kök dizinde açık lisans dosyası bırakılmadı; varlık lisansları her asset için ayrı takip edilecek ve atıf gerektirenler assets/ATTRIBUTIONS.md dosyasında listelenecek.
 
-Not: Proje sahibinin isteğiyle bu repo için explicit bir lisans dosyası eklenmedi.
+Crash reporting: scripts/crash_reporter.gd eklendi ve Autoload yapıldı. REPORT_URL ve AUTH_TOKEN ayarları README ve proje ayarlarında belirtilecek.
 
-İlk eklenenler:
-- Basit proje iskeleti (project.godot, .gitignore)
-- Sahne ve script taslakları (scenes/, scripts/)
-- i18n çeviri dosyaları (i18n/)
-- Export preset örneği (Android ve iOS) — kullanıcı ayarları gerektiren yerler yorumlandı.
+Proje yapısı (kısaca):
+- scenes/ — .tscn sahne dosyaları
+- scripts/ — GDScript dosyaları
+- assets/ — modeller, ses, müzik, atıf dosyası
+- i18n/ — .po çeviri dosyaları
 
-İleri adımlar (yapacağım):
-1) Placeholder varlıkları (3D/2D/ses) toplayıp assets/ altında ekleyeceğim ve atıf/izinleri not edeceğim.
-2) Temel oynanış mekanikleri: karakter hareketi, el feneri ışığı, cutscene triggerları, NPC davranışları.
-3) Lokalleştirme geliştirmesi: otomatik çeviri taslaklarını gözden geçirip insan çevirilerine hazırlama.
-4) Android/iOS için export testleri ve README'e kurulum/derleme talimatları ekleme.
-
+Not: Sketchfab ve Poly Pizza'dan varlık toplama işlemine başlıyorum; uygun bulduğum modelleri assets/ altında toplayıp burada atıf satırlarını ekleyeceğim.
