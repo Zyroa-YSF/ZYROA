@@ -1,6 +1,6 @@
 [application]
 config/name="ZYROA - Bad Day Insomnia"
-run/main_scene="res://scenes/main_menu.tscn"
+run/main_scene="res://scenes/safe_boot.tscn"
 
 [rendering]
 quality/driver/driver_name="GLES3"
