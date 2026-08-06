@@ -9,7 +9,7 @@ func _ready():
         $CutsceneTrigger.connect("body_entered", Callable(self, "_on_trigger"))
 
 func _on_trigger(body):
-    if body.name == "Player":
+    if body and body.name == "Player":
         start_cutscene(body)
 
 func start_cutscene(player):

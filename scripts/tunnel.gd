@@ -5,16 +5,19 @@ extends Node2D
 @export var battery_life := 100
 @export var flashlight_node_path := "Light2D"
 
-@onready var light := $Light2D
+@onready var light := null
 
 func _ready():
-    light.visible = false
+    if has_node(flashlight_node_path):
+        light = get_node(flashlight_node_path)
+        light.visible = false
 
 func toggle_flashlight():
-    light.visible = not light.visible
+    if light:
+        light.visible = not light.visible
 
 func _process(delta):
-    if light.visible:
+    if light and light.visible:
         battery_life = max(0, battery_life - delta * 2)
     # Placeholder: detect when player reaches tunnel end using an Area2D in scene (not implemented in text scene)
 

@@ -32,6 +32,7 @@ func _physics_process(delta):
     if Input.is_action_just_pressed("ui_accept") and is_on_floor():
         velocity.y = jump_velocity
 
+    # Use CharacterBody2D convenience method
     move_and_slide()
 
     # Interaction
@@ -44,4 +45,5 @@ func _physics_process(delta):
 
 func _on_flashlight_battery_changed(value):
     if ui:
-        ui.update_battery(value)
+        if ui.has_method("update_battery"):
+            ui.update_battery(value)

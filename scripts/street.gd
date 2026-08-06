@@ -9,7 +9,7 @@ func _ready():
         $VendorArea.connect("body_entered", Callable(self, "_on_vendor_area"))
 
 func _on_vendor_area(body):
-    if body.name == "Player":
+    if body and body.name == "Player":
         player_ref = body
         # Offer free simit (placeholder): set a flag on player to allow steal interaction
         player_ref.set_meta("can_steal_simit", true)
@@ -28,7 +28,8 @@ func attempt_steal(player):
             npc.start_chase(player)
     else:
         # successful steal: give simit (game state change placeholder)
-        player.set_meta("has_simit", true)
+        if player:
+            player.set_meta("has_simit", true)
         # proceed to apartment interior
         get_tree().change_scene_to_file("res://scenes/apartment_interior.tscn")
 
