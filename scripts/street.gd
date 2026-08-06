@@ -5,7 +5,8 @@ var vendor_chasing := false
 var player_ref := null
 
 func _ready():
-    $VendorArea.connect("body_entered", Callable(self, "_on_vendor_area"))
+    if has_node("VendorArea"):
+        $VendorArea.connect("body_entered", Callable(self, "_on_vendor_area"))
 
 func _on_vendor_area(body):
     if body.name == "Player":
@@ -19,10 +20,12 @@ func attempt_steal(player):
         # vendor chases forever
         vendor_chasing = true
         # spawn a chasing NPC and start chase
-        var npc = preload("res://scripts/npc.gd").new()
+        var npc_scene = preload("res://scenes/npc.tscn")
+        var npc = npc_scene.instantiate()
         add_child(npc)
         npc.global_position = Vector2(100,100)
-        npc.start_chase(player)
+        if npc.has_method("start_chase"):
+            npc.start_chase(player)
     else:
         # successful steal: give simit (game state change placeholder)
         player.set_meta("has_simit", true)
